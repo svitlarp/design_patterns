@@ -31,6 +31,15 @@ Table of contents
 
 ### <ins>Adapter Method Design Pattern</ins>
 
+`Acts as a bridge to connect incompatible interfaces or formats`
+**My Example: Integration of incompatible payment APIs (like PayPal and Stripe) under a unified interface process_payment() for the banking system.**
+
+> <ins> Main idea:</ins>
+> Helps integrate different payment APIs using a unified interface process_payment() as a technical method that executes the actual payment, while the client interacts with the system through the high-level transfer_money() method of banking application.
+> Check out the example code [here &rarr;](/structural_design_patterns/adapter_method_design_pattern.py)
+
+![Facade Method UML diagramm](/assets/images/AdapterMethod.png)
+
 ### <ins>Facade Method Design Pattern</ins>
 
 `Provides a simple unified interface to a set of complex subsystems`
@@ -41,7 +50,7 @@ Table of contents
 
 > <ins> Main idea:</ins>
 > Instead of dealing with complex subsystems or components, the client only needs to call a single transfer_money() method, implemented as a Facade. The client doesn’t need to know all the individual methods, the underlying resources, or the correct sequence of calls.
-> Check out the example code [here &rarr;](/creational_design_patterns/facade_method_design_pattern.py)
+> Check out the example code [here &rarr;](/structural_design_patterns/facade_method_design_pattern.py)
 
 ### <ins>Proxy Method Design Pattern</ins>
 
