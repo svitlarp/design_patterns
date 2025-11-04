@@ -25,13 +25,46 @@ Table of contents
 
 ## Creational Design Patterns
 
+<!-- Factory Method Design Pattern -->
+
+### <ins> Factory Method Design Pattern</ins>
+
+`Defines an interface for creating objects, letting each factory decide which specific type of object to create.`<br />
+**My Example: Creates different types of bank accounts through the same interface**
+
+> <ins> Main idea:</ins>
+> Factory Method → One abstract creator (AccountFactory), multiple concrete factories, one product type (Account).
+> The abstract factory (AccountFactory) defines the create_account() factory method — but doesn’t decide which account to create.
+> Each concrete factory (CurrentAccountFactory, SavingAccountFactory) implements create_account() differently so that the client code calls the same interface, but gets different results.
+> Check out the example code [here &rarr;](/creational_design_patterns/factory_method_design_pattern.py)
+
+![Facade Method UML diagramm](/assets/images/FactoryMethod.png)
+
+<!-- Abstract Factory Method Design Pattern -->
+
+### <ins> Abstract Factory Method Design Pattern</ins>
+
+`Defines an interface for creating set of related objects, letting each bank factory decide which specific product to create.`<br />
+**My Example: Creates different types of banking products -Accounts, Cards and loans through the same interface**
+
+> <ins> Main idea:</ins>
+> Abstract Factory Method → One abstract factory (BankFactory), multiple concrete factories(InvestmentBankFactory, CommercialBankFactory, RetailBankFactory), multiple product types (Account, Card, Loan).
+> The abstract factory (BankFactory) defines creation method for each product type (create_account(), create_card() create_loan()), but doesn’t decide which exactly account, card, or loan to create.
+> Each concrete factory implements these methods to produce a cohesive family of products appropriate for that bank, so client code calls the same interface but gets different results depending on the factory used.
+
+> Check out the example code [here &rarr;](/creational_design_patterns/abstract_factory_method_design_pattern.py)
+
+![Facade Method UML diagramm](/assets/images/AbstractFactoryMethod.png)
+
 [Go to -> Creational Design Pattern](#creational-design-pattern)
 
 ## Structural Design Pattern
 
+<!-- Adapter Method Design Pattern -->
+
 ### <ins>Adapter Method Design Pattern</ins>
 
-`Acts as a bridge to connect incompatible interfaces or formats`
+`Acts as a bridge to connect incompatible interfaces or formats`<br />
 **My Example: Integration of incompatible payment APIs (like PayPal and Stripe) under a unified interface process_payment() for the banking system.**
 
 > <ins> Main idea:</ins>
@@ -40,10 +73,11 @@ Table of contents
 
 ![Facade Method UML diagramm](/assets/images/AdapterMethod.png)
 
+<!-- Facade Method Design Pattern -->
+
 ### <ins>Facade Method Design Pattern</ins>
 
-`Provides a simple unified interface to a set of complex subsystems`
-
+`Provides a simple unified interface to a set of complex subsystems`<br />
 **My Example: Money Transfer in a Banking System**
 
 ![Facade Method UML diagramm](/assets/images/FacadeMethod.jpg)
