@@ -54,9 +54,28 @@ Table of contents
 
 > Check out the example code [here &rarr;](/creational_design_patterns/abstract_factory_method_design_pattern.py)
 
-![Facade Method UML diagramm](/assets/images/AbstractFactoryMethod.png)
+![Abstract Method UML diagramm](/assets/images/AbstractFactoryMethod.png)
 
-[Go to -> Creational Design Pattern](#creational-design-pattern)
+<!-- Singleton  Method Design Pattern -->
+
+### <ins> Singleton Method Design Pattern</ins>
+
+`Ensures that only one instance of a class exists, and provides a global point of access to it.`<br />
+**My Examples:**
+
+- Database Connection: Ensures that all modules (payments, loans, users) share a single database connection instead of creating a new one every time.
+- Transaction Logger: Maintains one unified logging system so all records are stored in a single file, console, or monitoring system rather than in multiple independent logs.
+- Session Manager: Guarantees that each user has only one active session, preventing multiple logins or duplicated user data in memory.
+
+<ins>Main idea:</ins>
+The creation of the instance is fully controlled by the class itself.
+For example, in a Session Manager, only one global instance of the session handler exists — if a user is already logged in, a new login attempt will not create another session.
+
+> Check out the example code [here &rarr;](/creational_design_patterns/singleton_method_design_pattern.py)
+
+![Singleton Method UML diagramm](/assets/images/....)
+
+[Go to -> Creational Design Patterns](#creational-design-pattern)
 
 ## Structural Design Pattern
 
@@ -88,8 +107,8 @@ Table of contents
 
 ### <ins>Proxy Method Design Pattern</ins>
 
-> [Go to -> Structural Design Pattern](#creational-design-pattern)
+> [Go to -> Structural Design Patterns](#creational-design-pattern)
 
 ## Behavioral Design Patterns
 
-[Go to -> Behavioral Design Pattern](#behavioral-design-pattern)
+[Go to -> Behavioral Design Patterns](#behavioral-design-pattern)
